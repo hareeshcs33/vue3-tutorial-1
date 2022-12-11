@@ -4,12 +4,39 @@ import DefaultPage from "../components/DefaultPage.vue";
 import PostsPage from "../components/PostsPage.vue";
 import StopWatch from "../components/StopWatch.vue";
 import ToDoPage from "../components/ToDoPage.vue";
+import AdminView from "../admin/AdminView.vue";
+import ProductsView from "../admin/ProductsView.vue";
+import ProductCreate from "../admin/ProductCreate.vue";
+import ProductEdit from "../admin/ProductEdit.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
+  },
+  {
+    path: "/admin",
+    name: "AdminView",
+    component: AdminView,
+    children: [
+      {
+        path: "products",
+        name: "ProductsView",
+        component: ProductsView,
+      },
+      {
+        path: "products/create",
+        name: "ProductCreate",
+        component: ProductCreate,
+      },
+      {
+        path: "products/:id/edit",
+        name: "ProductEdit",
+        component: ProductEdit,
+        props: true,
+      },
+    ],
   },
   {
     path: "/DefaultPage",
