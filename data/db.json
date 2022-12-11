@@ -1,0 +1,23 @@
+{
+    "posts": [
+        {
+          "title": "Welcome to the blog",
+          "body": "Lorem ipsum",
+          "id": 1,
+          "tags": [
+            "webdev",
+            "coding",
+            "news"
+          ]
+        },
+        {
+          "title": "Title Two here",
+          "body": "Lorem ipsum",
+          "id": 2,
+          "tags": [
+            "css",
+            "html"
+          ]
+        }
+      ]
+}

@@ -1,0 +1,25 @@
+{
+    "todos": [
+        {
+            "id":1,
+            "name":"John",
+            "age":30,
+            "email":"John@gmail.com",
+            "phone":"0123456789"
+        },
+        {
+            "id":2,
+            "name":"Smith",
+            "age":35,
+            "email":"Smith@gmail.com",
+            "phone":"0123456789"
+        },
+        {
+            "id":3,
+            "name":"Steve",
+            "age":40,
+            "email":"Steve@gmail.com",
+            "phone":"0123456789"
+        }
+    ]
+}
